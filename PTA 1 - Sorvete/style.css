@@ -16,7 +16,7 @@ body {
     padding: 40px 114px;
     gap: 540px;
 
-    position: absolute;
+    position: fixed;
     height: 199px;
     left: 0%;
     right: 0%;
@@ -25,6 +25,7 @@ body {
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
     border-radius: 0px;
+    z-index: 1;
 }
 
 .searchbar {
@@ -46,13 +47,23 @@ body {
     flex-grow: 0;
 }
 
+main {
+    margin-top: 199px;
+}
 
 .cooler {
+    background-color: crimson;
+
     position: absolute;
     width: 1212px;
     height: 512px;
     left: 114px;
     top: 279px;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 300px;
 }
 
 .bigpops {
@@ -60,13 +71,12 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
-    gap: 0px;
 
     position: absolute;
-    width: 318px;
-    height: 512px;
-    left: 114px;
-    top: 279px;
+    width: (318-24)px;
+    height: (512-24)px;
+    left: 0px;
+    top: 0px;
     
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
@@ -162,27 +172,31 @@ body {
 }
 
 .smallpops {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 31px;
-
     position: absolute;
     width: 240px;
     height: 240px;
-    left: 464px;
-    top: 279px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
     border-radius: 16px;
 }
 
+.smallpops img{
+    width: 192px;
+    height: 192px;
+    padding: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 .p1{
-    top: 279px;
+    top: 0px;
+    left: 350px;
 }
 
 .p2{
-    top: 551px;
+    top: 272px;
+    left: 350px;
 }
