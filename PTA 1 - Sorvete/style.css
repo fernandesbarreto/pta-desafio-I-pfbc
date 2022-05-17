@@ -226,3 +226,20 @@ main {
     grid-column-start: 4;
     grid-column-end: 5;
 }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 114px;
+    gap: 292px;
+
+    position: absolute;
+    height: 155.02px;
+    left: 0%;
+    right: 0%;
+    bottom: 0px;
+
+    background: #F2F2F2;
+}
